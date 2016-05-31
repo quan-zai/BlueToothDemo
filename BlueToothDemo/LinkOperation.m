@@ -103,6 +103,14 @@
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI {
     
+    /**
+     *  在ios中蓝牙广播信息中通常会包含以下4中类型的信息。ios的蓝牙通信协议中默认不接受其他类型的广播信息。因此需要注意的是，如果需要在扫描设备时，通过蓝牙设备的Mac地址来唯一辨别设备，那么需要与蓝牙设备的硬件工程师沟通好：将所需要的Mac地址放到一下几种类型的广播信息中。
+     kCBAdvDataIsConnectable = 1;
+     kCBAdvDataLocalName = SN00000003;
+     kCBAdvDataManufacturerData = <43474d01>;
+     kCBAdvDataTxPowerLevel = 0;
+     */
+
     NSLog(@"advertisementData.kCBAdvDataManufacturerData = %@", advertisementData[@"kCBAdvDataManufacturerData"]);
     
     // 设备的UUID（peripheral.identifier）是由两个设备的mac通过算法得到的，所以不同的手机连接相同的设备，它的UUID都是不同的，无法标识设备

@@ -1,1 +1,2 @@
 # BlueToothDemo
+这个demo中提供了一个ios使用源生CoreBluetooth框架的蓝牙操作的工具类。

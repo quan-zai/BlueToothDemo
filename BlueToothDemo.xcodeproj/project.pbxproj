@@ -15,6 +15,7 @@
 		74EF14F91CF9EA6E0011DD1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74EF14F71CF9EA6E0011DD1F /* LaunchScreen.storyboard */; };
 		74EF15041CF9EA6E0011DD1F /* BlueToothDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF15031CF9EA6E0011DD1F /* BlueToothDemoTests.m */; };
 		74EF150F1CF9EA6E0011DD1F /* BlueToothDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF150E1CF9EA6E0011DD1F /* BlueToothDemoUITests.m */; };
+		C300115E1CFD399A004B6BFE /* LinkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C300115D1CFD399A004B6BFE /* LinkOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		74EF150A1CF9EA6E0011DD1F /* BlueToothDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueToothDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EF150E1CF9EA6E0011DD1F /* BlueToothDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueToothDemoUITests.m; sourceTree = "<group>"; };
 		74EF15101CF9EA6E0011DD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C300115C1CFD399A004B6BFE /* LinkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkOperation.h; sourceTree = "<group>"; };
+		C300115D1CFD399A004B6BFE /* LinkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		74EF14E81CF9EA6E0011DD1F /* BlueToothDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C300115C1CFD399A004B6BFE /* LinkOperation.h */,
+				C300115D1CFD399A004B6BFE /* LinkOperation.m */,
 				74EF14EC1CF9EA6E0011DD1F /* AppDelegate.h */,
 				74EF14ED1CF9EA6E0011DD1F /* AppDelegate.m */,
 				74EF14EF1CF9EA6E0011DD1F /* ViewController.h */,
@@ -273,6 +278,7 @@
 				74EF14F11CF9EA6E0011DD1F /* ViewController.m in Sources */,
 				74EF14EE1CF9EA6E0011DD1F /* AppDelegate.m in Sources */,
 				74EF14EB1CF9EA6E0011DD1F /* main.m in Sources */,
+				C300115E1CFD399A004B6BFE /* LinkOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlueToothDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jh.BlueToothDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlueToothDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jh.BlueToothDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +506,7 @@
 				74EF15151CF9EA6E0011DD1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74EF15161CF9EA6E0011DD1F /* Build configuration list for PBXNativeTarget "BlueToothDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +515,7 @@
 				74EF15181CF9EA6E0011DD1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74EF15191CF9EA6E0011DD1F /* Build configuration list for PBXNativeTarget "BlueToothDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +524,7 @@
 				74EF151B1CF9EA6E0011DD1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

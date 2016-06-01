@@ -1,5 +1,5 @@
 //
-//  CGMLinkOperation.m
+//  LinkOperation.m
 //  Weinei-iPhone
 //
 //  Created by 徐正权 on 16/3/25.
@@ -89,6 +89,7 @@
     switch (central.state) {
         case CBCentralManagerStatePoweredOn:
         {
+            // 扫描外围设备
             [self.centeralManager scanForPeripheralsWithServices:nil options:nil];
         }
             break;
@@ -101,7 +102,8 @@
 
 #pragma mark - 发现设备Delegate -
 
-- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI {
+- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI
+{
     
     /**
      *  在ios中蓝牙广播信息中通常会包含以下4中类型的信息。ios的蓝牙通信协议中默认不接受其他类型的广播信息。因此需要注意的是，如果需要在扫描设备时，通过蓝牙设备的Mac地址来唯一辨别设备，那么需要与蓝牙设备的硬件工程师沟通好：将所需要的Mac地址放到一下几种类型的广播信息中。
@@ -183,7 +185,7 @@
 
 #pragma mark - 如果发现服务，则搜索特征 -
 
--(void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
 {
     if (error) {
         // 输出错误信息

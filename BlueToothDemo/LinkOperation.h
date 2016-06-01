@@ -1,5 +1,5 @@
 //
-//  CGMLinkOperation.h
+//  LinkOperation.h
 //  Weinei-iPhone
 //
 //  Created by 徐正权 on 16/3/25.

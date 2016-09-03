@@ -296,7 +296,7 @@
     /* When a write occurs, need to set off a re-read of the local CBCharacteristic to update its value */
     
     // 读数据
-    if (![characteristic.UUID isEqual:[CBUUID UUIDWithString:kCGMCharacteristicOneUUID]]) {
+    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:kCGMCharacteristicOneUUID]]) {
         [self readCharacter];
     }
 }
